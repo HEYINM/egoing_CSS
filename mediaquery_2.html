@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+
+        header {
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        @media(max-width:500px) {
+            .content {
+                flex-direction: column;
+            }
+            .content nav,
+            .content aside {
+                border: none;
+                flex-basis: auto;
+            }
+            nav{
+                order: 0;
+            }
+            
+            main{
+                order: 1;
+            }
+            
+            aside{
+                order: 2;
+                display: none;
+            }
+
+        }
+
+        .content nav {
+            border-right: 1px solid gray;
+        }
+
+        .content aside {
+            border-left: 1px solid gray;
+        }
+
+        nav,
+        aside {
+            flex-basis: 150px;
+            flex-shrink: 0
+        }
+
+        main {
+            padding: 10px;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        main {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda perspiciatis recusandae aut consequatur porro dolorem, rem nisi expedita ipsam ipsa dolor maxime quaerat ullam temporibus molestiae, doloremque, reiciendis deserunt vel eaque sequi quis esse veritatis illum. Expedita optio deserunt ea magnam velit placeat reprehenderit delectus numquam itaque harum qui sunt excepturi, deleniti, laudantium molestiae accusantium dolores consequatur in facilis. Maxime consectetur officiis eaque, molestiae sapiente quasi esse ipsum et aliquam. Enim et impedit, totam voluptatibus est iure.
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/course/1"> 홈페이지 </a>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+
+        header {
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .content nav {
+            border-right: 1px solid gray;
+        }
+
+        .content aside {
+            border-left: 1px solid gray;
+        }
+
+        nav,
+        aside {
+            flex-basis: 150px;
+            flex-shrink: 0
+        }
+
+        main {
+            padding: 10px;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        main {
+            /*            order: -1;*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non optio suscipit cupiditate fuga, dolores, expedita repellendus quas at explicabo laudantium! Ipsa eveniet nihil, iste, sed consectetur minima optio dolores officiis explicabo tempore ad exercitationem delectus eos ipsum rerum officia beatae facere corporis magni et animi nam voluptatem. Consequuntur fugiat repellat quos, nihil voluptates ex ea nam accusamus molestias, ratione enim, consectetur obcaecati, impedit saepe! Velit rem aspernatur quis labore ducimus recusandae temporibus consequuntur! Optio expedita fugit provident autem ipsa cumque in culpa blanditiis tempora voluptatem eaque dolorem repellat nulla explicabo quibusdam sed rem, suscipit beatae adipisci nostrum dolore consequuntur. At!
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/course/1"> 홈페이지 </a>
+        </footer>
+    </div>
+</body>
+
+</html>
